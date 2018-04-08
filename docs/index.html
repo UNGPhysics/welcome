@@ -1,0 +1,26 @@
+<script src="processing.min.js"></script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+<br>
+This is the gh-page of UNG Physics's "welcome" repository.
+Here you can create any kind of web content you'd like.
+For example, embed an interactive, science-y Processing sketch:
+<br>
+<br>
+
+<canvas data-processing-sources="wave.pde"></canvas>
+
+<br>
+<br>
+Now use SageMath to mathematically model the above wave.
+Feel free to tinker with the various parameters below, then click "Evaluate" to run it (may take a few seconds):
+<br>
+<br>
+
+<div class="sage">
+	<script type="text/x-sage">
+sines = [plot(sin(2.0*x-c), (-2*pi,2*pi), color=Color(0,0,0), ymin=-1, ymax=1) for c in sxrange(0,4,0.2)]
+animate(sines)
+	</script>
+</div>
